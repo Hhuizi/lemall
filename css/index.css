@@ -1,0 +1,59 @@
+/* 头部样式 */
+#head{
+    background-color: #fff;
+}
+/* 导航区样式 */
+.head_top{
+    width: 100%;
+    background: #333;
+}
+.head_top a{
+    color: #e5e5e5;
+}
+.head_top_con{
+    width: 1200px;
+    margin: 0 auto;
+}
+.navs{
+    float: right;
+}
+.navs ul{
+    float: left;
+}
+.navs1{
+    padding-right: 15px;
+    text-align: right;
+}
+.navs1_li{
+    float: left;
+    padding:0 3px;
+    height: 30px;
+    line-height: 30px;
+}
+.navs1_div{
+    height: 8px;
+    width: 1px;
+    padding: 11px 4px;
+    float: left;
+}
+.navs1_span{
+    display: block;
+    height: 8px;
+    width: 1px;
+    background-color: #e5e5e5;
+}
+.navs1_li a:hover{
+    color:#d80c18;
+}
+.rline{
+    float: left;
+    padding: 0 14px;
+}
+.rline a:hover{
+    color:#d80c18;
+}
+.memu{
+    position: relative;
+}
+
+
