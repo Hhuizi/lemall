@@ -48,12 +48,340 @@
 .rline{
     float: left;
     padding: 0 14px;
+    line-height: 30px;
 }
 .rline a:hover{
     color:#d80c18;
 }
 .memu{
     position: relative;
+    line-height: 30px;
+}
+.hd{
+    border: solid 1px transparent;
+    border-bottom: none;
+    margin-top: -1px;
+}
+.hd a{
+    float: left;
+    padding: 0 14px;
+    overflow: hidden;
+}
+.hd_i{
+    width: 16px;
+    height: 16px;
+    overflow: hidden;
+    float: right;
+    margin: 4px -14px 0 1px;
+}
+.two_navs{
+    display: none;
+}
+/* logo区样式 */
+.head_bottom{
+    width: 1200px;
+    margin: 0 auto;
+    height: 105px;
+}
+.logo{
+    float: left;
+    width: 310px;
+    height: auto;
+    padding-right: 40px;
+    padding-top: 35px;
+}
+.head_serch{
+    float: left;
+    margin-top: 34px;
+    margin-left: 80px;
+    width: 484px;
+    border: 1px solid #2884c7;
+}
+#txt_company{
+    color: #999;
+    width: 379px;
+    height: 22px;
+    padding: 5px 5px 5px 10px;
+    line-height: 22px;
+    font-size: 14px;
+    box-shadow: 0 0 2px #d7d7d7 inset;
+    border: 0;
+    outline: 0;
+}
+#search_submit{
+    float: right;
+    width: 90px;
+    height: 32px;
+    background: #2884c7;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+}
+.btn_cart{
+    float: right;
+    margin-top: 34px;
+    margin-right: 40px;
+}
+.btn_cart a {
+    display: inline-block;
+    width: 160px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 14px;
+    position: relative;
+    border: 1px solid #d8d6d6;
+    color: #2884c7;
+}
+.btn_cart_i {
+    float: left;
+    margin-left: 31px;
+    margin-right: 0px;
+    height: 25px;
+    width: 25px;
+    background: url(../images/gouwuche.png) no-repeat center 6px;
+}
+.btn_cart_em{
+    padding-left: 5px;
 }
 
-
+/*navs_2区样式*/
+.navs-2{
+	border-bottom: solid 2px #333;
+    height: 38px;
+}
+.navs_2_div{
+	width: 1200px;
+	margin: 0 auto;
+	min-height: 30px;
+}
+.nav_shopall{
+	float: left;
+	position: relative;
+    width: 237px;
+}
+.nav_shopall_btn{
+	width: 237px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    background: #282727;
+    border-radius: 1px 1px 0 0;
+    overflow: hidden;
+    position: relative;
+}
+.nav_shopall_btn_img{
+	vertical-align: middle;
+	margin:0  5px 0 81px;
+}
+.nav_shopall_list{
+	position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 1;
+    width: 237px;
+    height: 460px;
+    background: rgba(255, 255, 255, 0.9);
+}
+.nav_shopall_list ul{
+	overflow: hidden;
+}
+.nav_shopall_list ul li{
+    margin-top: -1px;
+}
+.nav_shopall_list ul li a{
+    width: 181px;
+	height: 78px;
+	line-height: 78px;
+	display: block;
+    padding: 0 0 0 30px;
+	font-size: 14px;
+    color: #333;
+    border-bottom: solid 1px #fff;
+    border-color: rgba(255, 255, 255, 0.6);
+}
+.t{
+	float: left;
+}
+.nav_shopall_list_i{
+	margin-top: 32px;
+	float: right;
+	width: 8px;
+	height: 13px;
+	background: url(../images/icon2.png) no-repeat center;
+}
+.nav_shopall_pop{
+	width: 960px;
+    height: 460px;
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.18);
+    position: absolute;
+    z-index: 2;
+    left: 237px;
+    top: 40px;
+    display: none;
+}
+/*爆款推荐*/
+.popBox{
+	height: 460px;
+	overflow: hidden;
+	position: absolute;
+    display: none;
+}
+.inner_wrap{
+	float: left;
+    margin: 10px 0 0 30px;
+}
+.inner_wrap ul{
+	float: left;
+    width: 230px;
+}
+.inner_wrap ul li{
+	margin-bottom: 20px;
+}
+.inner_wrap ul li div{
+	display: inline-block;
+    vertical-align: top;
+}
+.nav_shopall_pop a{
+	color: #333;
+}
+.nav_shopall_pop a:hover{
+	color: #f01e00;
+}
+.pic img{
+	width: 80px;
+	height: 80px;
+}
+.txt{
+	margin: 26px 0 0 10px;
+}
+/*爆款推荐广告*/
+.ad{
+	float: right;
+    width: 240px;
+    height: 440px;
+    padding: 10px 10px 0 0;
+}
+.ad img{
+	width: 240px;
+    vertical-align: text-top;
+    max-height: 440px;
+}
+/*电视系列*/
+.popL{
+	padding-left: 35px;
+    width: 665px;
+    margin-right: -2px;
+    float: left;
+    height: 460px;
+    overflow: hidden;
+}
+.popL_list{
+	padding-left: 7px;
+    margin-top: 36px;
+}
+.li_i{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background: #8a8a8a;
+    margin-left: -12px;
+    margin-right: 9px;
+    vertical-align: 3px;
+}
+.popL_list li{
+	height: 60px;
+	min-height: 42px;
+    white-space: nowrap;
+    overflow: hidden;
+    line-height: 19px;
+    padding-left: 12px;
+}
+.popL_list a .mcl-3,.popL_list a:hover .mcl-3{
+	color: #999;
+}
+.popL2{
+	float: left;
+    height: inherit;
+    width: 700px;
+    overflow: hidden;
+}
+.popLcen{
+	overflow: hidden;
+    padding-left: 30px;
+}
+.popLcen_list{
+	width: 233px;
+    float: left;
+    margin-top: 30px;
+}
+.popLcen_list{
+	height: 88px;
+}
+.pic2{
+	float: left;
+    width: 40px;
+    height: 40px;
+}
+.pic2 img{
+	width: 40px;
+	height: 40px;
+	vertical-align: top;
+}
+.text{
+	float: left;
+    margin-left: 16px;
+    font-size: 12px;
+    line-height: 42px;
+    height: 40px;
+    overflow: hidden;
+}
+.navKeyword1{
+	float: left;
+    padding-left: 14px;
+    padding-top: 2px;
+}
+.navKeyword1 ul li{
+	margin-left: 25px;
+    font-size: 15px;
+    float: left;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+}
+.navKeyword1 ul li a,.navKeyword2 a{
+	color: #333;
+}
+.navKeyword1 ul li a:hover,.navKeyword2 a:hover{
+	color: #f01e00;
+}
+.navKeyword2{
+	float: right;
+    padding-top: 2px;
+}
+.i_help{
+	margin-left: 10px;
+    margin-right: 0;
+    font-size: 15px;
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+}
+.i_help_i{
+	vertical-align: top;
+    display: inline-block;
+    width: 28px;
+    height: 34px;
+    background-image: url(../images/icon3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.i_help a:hover .i_help_i{
+	background-image: url(../images/icon3_1.png);
+}
