@@ -41,8 +41,8 @@ gulp.task("html", ()=>{
 // script 转存指令;
 
 gulp.task("script", ()=>{
-    return gulp.src(["script/app/*.js","script/module/*.js","script/libs/*.js","!script/libs/jquery.js"])
-    .pipe(concat("mian.js"))
+    return gulp.src(["script/*.js","!script/jquery.js"])
+    .pipe(concat("main.js")).pipe(babel())
     .pipe(uglify())
     .pipe(gulp.dest("dist/script"));
 })
