@@ -49,6 +49,7 @@
     float: left;
     padding: 0 14px;
     line-height: 30px;
+    position: relative;
 }
 .rline a:hover{
     color:#d80c18;
@@ -56,16 +57,18 @@
 .memu{
     position: relative;
     line-height: 30px;
+    padding: 0;
 }
 .hd{
     border: solid 1px transparent;
-    border-bottom: none;
     margin-top: -1px;
+    height: 25px;
 }
 .hd a{
     float: left;
     padding: 0 14px;
     overflow: hidden;
+    height: 25px;
 }
 .hd_i{
     width: 16px;
@@ -74,8 +77,45 @@
     float: right;
     margin: 4px -14px 0 1px;
 }
+.ul{
+    left: 1px;
+}
 .two_navs{
     display: none;
+    position: absolute;
+    z-index: 3;
+    top: 25px;
+    background: #fff;
+}
+.two_navs ul{
+    border: solid 1px #dfdfdf;
+    border-top:none;
+    padding: 0 12px;
+    width: 53px;
+    line-height: 25px;
+    white-space: nowrap;
+}
+.two_navs a{
+    color:#333;
+}
+.memu .xiazai{
+    right: 0;
+    border: solid 1px #dfdfdf;
+    border-top: none;
+    width: 264px;
+    margin: 0 auto;
+    padding:15px;
+    right: 1px;
+}
+.memu .xiazai div{
+    width: 50%;
+    text-align: center;
+    float: left;
+}
+.memu .xiazai div span{
+    display: block;
+    color: #888;
+    line-height: 0;
 }
 /* logo区样式 */
 .head_bottom{
@@ -150,7 +190,7 @@
 }
 
 /*navs_2区样式*/
-.navs-2{
+.navs_2{
 	border-bottom: solid 2px #333;
     height: 38px;
 }
@@ -218,12 +258,10 @@
 .nav_shopall_pop{
 	width: 960px;
     height: 460px;
-    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.18);
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     left: 237px;
     top: 40px;
-    display: none;
 }
 /*爆款推荐*/
 .popBox{
@@ -231,6 +269,7 @@
 	overflow: hidden;
 	position: absolute;
     display: none;
+    background: #fff;
 }
 .inner_wrap{
 	float: left;
