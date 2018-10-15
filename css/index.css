@@ -875,12 +875,83 @@
     border-radius: 3px 0 0 3px;
     overflow: hidden;
 }
-.top_show{
+.is_top_show{
 	height: 36px;
 	background: url(../images/icon5.png) no-repeat center;
 }
-
-
-
-
+/* 右侧飘窗样式 */
+.sidebar_float{
+    z-index: 5;
+    position: fixed;
+    bottom: 103px;
+    right: 0;
+    width: 47px;
+    background: #fff;
+    border: solid 1px #eaeaea;
+    border-right: 0;
+    border-radius: 3px 0 0 3px;
+    text-align: center;
+}
+.is_car,.is_share,.is_kefu{
+    position: relative;
+}
+.tubiao{
+    display: block;
+    width: auto;
+    height: 37px;
+    overflow: hidden;
+}
+.is_cart_i,.is_share_i,.is_kefu_i{
+    display: inline-block;
+    width: 32px;
+    height: 34px;
+    background-repeat: no-repeat ;
+    background-position:  center;
+}
+.is_cart_i{
+    background-image: url(../images/icon6.png); 
+}
+.is_share_i{
+    background-image: url(../images/icon7.png); 
+}
+.is_kefu_i{
+    background-image: url(../images/icon3.png);
+}
+.top_show,.share_show{
+    display: none;
+}
+.absolute{
+    position: absolute;
+}
+.arrow{
+    border-left: 12px solid #efefef;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    left: -17px;
+    top: 10px;
+}
+.ico_info_bg,.share_bg,.ico_info_bg{
+    top: 1px;
+    right: 64px;
+    background-color: #efefef;
+    height: 20px;
+    line-height: 20px;
+    padding: 6px 10px;
+    color: #000;
+    white-space: nowrap;
+    border-radius: 3px;
+}
+.share_bg{
+    background-image: url(../images/icon8.png);
+    background-repeat:  no-repeat;
+    background-position:  center;
+    width: 130px;
+    padding: 6px 0;
+}
+.share_bg a{
+    display: inline-block;
+    width: 28px;
+    height: 32px;
+    margin-top: -9px;
+}
 

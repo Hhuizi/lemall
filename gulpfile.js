@@ -40,11 +40,11 @@ gulp.task("html", ()=>{
 
 // script 转存指令;
 
-gulp.task("script", ()=>{
-    return gulp.src(["script/*.js","!script/jquery.js"])
+gulp.task("script", function(){
+    return gulp.src(["!script/jquery.js","script/*.js"])
     .pipe(concat("main.js")).pipe(babel())
     .pipe(uglify())
-    .pipe(gulp.dest("dist/script"));
+    .pipe(gulp.dest("dist/script"))
 })
 
 gulp.task("css", ()=>{
