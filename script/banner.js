@@ -33,14 +33,14 @@ Object.assign(Banner.prototype , {
         }
     },
     chanL(){
-        this.btn_left.style.backgroundPositionY = "-67px";
-        this.btn_left.onmouseout = function(){
+            this.btn_left.style.backgroundPositionY = "-67px";
+            this.btn_left.onmouseout = function(){
             this.style.backgroundPositionY = "-6px";
         }
     },
     chanR(){
-        this.btn_right.style.backgroundPositionY = "-67px";
-        this.btn_right.onmouseout = function(){
+            this.btn_right.style.backgroundPositionY = "-67px";
+            this.btn_right.onmouseout = function(){
             this.style.backgroundPositionY = "-6px";
         }
     },

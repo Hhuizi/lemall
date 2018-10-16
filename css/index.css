@@ -720,6 +720,10 @@
 	position: relative;
     width: 240px;
     height: 240px;
+    transition: all .3s;
+}
+.Pic .active{
+    transform: scale(1.2);
 }
 .Text{
 	overflow: hidden;

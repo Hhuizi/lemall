@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>乐视 - 登录乐视帐号</title>
+    <link rel="stylesheet" href="css/resets.css">
+    <link rel="stylesheet" href="css/zhuce.css">
+</head>
+<body>
+    <div class="body">
+        <div class="logo">
+        <div class="logo_box">
+                <a id="logo_a">
+                    <img class="logo_img" src="images/bg3.png" />
+                </a>
+                <ul class="logo_box_ul" >
+                    <li class="lis">
+                        <span class="txt">语言：<a class="language">简体中文</a></span>
+                    </li>
+                    <li class="lis">|</li>
+                    <li class="lis">
+                        <span class="txt">国家/地区：<a class="area">中国</a></span>
+                    </li>
+                    <li class="lis" >|</li>
+                    <li class="lis" ><a href="http://www.le.com/help/index.html">帮助</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="login">
+            <div class="login_box">
+                <div class="login_top">
+                    <p class="p1">
+                        <span class="top_title">注册</span>
+                        <span class="note_box note_text1">
+                            <a class="note_box_a" href="login.html">立即登录</a>
+                        </span>
+                    </p>
+                    <ul class="login_top_ul">
+                        <li class="regi_form_input li1">
+                            <i class="icon1"></i>
+                            <input type="text" name="loginname" class="regi_login_input1" placeholder="手机号" value="" data-type="mobile">
+                            <i class="icon2"></i>
+                        </li>
+                        <li class="regi_form_input li1">
+                            <i class="icon3"></i>
+                            <input type="password" tabindex="2" value="" id="password" name="password" class="regi_login_input2" placeholder="密码">
+                        </li>
+                        <li class="regi_form_input li1">
+                            <span class="pwd_find">
+                                <i class="icon4"></i>
+                                <input type="text" class="regi_login_input3" name="regcode" placeholder="输入验证码，点击图片更换" >
+                            </span>
+                            <a href="#" class="yanzhengma" title="看不清？点击换一张">
+                                <img class="j-code-btn" src="images/create.png" id="getRegCode">
+                            </a>
+                        </li>
+                        <li class="regi_form_input li2">
+				            <span class="huoqu">
+				            	<i class="icon5"></i>
+				            	<input type="text" class="regi_login_input4 " name="verifycode" placeholder="6位验证码" maxlength="6">
+				            </span>
+	                        <a href="#" name="getmobilecode" class="regi-code-btn" title="点击获取短信验证码">获取验证码</a>
+	                    </li>
+                        <li class="li3">
+                            <label>
+                                <input type="checkbox" tabindex="4" name="xieyi" id="xieyi" checked="checked" value="true">我已阅读并同意
+                                <a class="pwd_reset blu" href="#">乐视用户协议</a>
+                            </label>
+                        </li>
+                        <li><a id="login-btn" href="#">注&nbsp;&nbsp;&nbsp;&nbsp;册</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
