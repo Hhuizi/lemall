@@ -279,6 +279,9 @@
 	float: left;
     width: 230px;
 }
+.inner_wrap .inner_last_ul{
+    width: 220px;
+}
 .inner_wrap ul li{
 	margin-bottom: 20px;
 }
@@ -360,17 +363,15 @@
     float: left;
     margin-top: 30px;
 }
-.popLcen_list{
-	height: 88px;
-}
 .pic2{
 	float: left;
     width: 40px;
-    height: 40px;
+    height: 88px;
 }
 .pic2 img{
-	width: 40px;
-	height: 40px;
+	width: 20px;
+    height: 20px;
+    padding: 10px;
 	vertical-align: top;
 }
 .text{
@@ -380,6 +381,18 @@
     line-height: 42px;
     height: 40px;
     overflow: hidden;
+}
+.more_i{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: url(../images/icon12.png) no-repeat center;
+    padding-left: 5px;
+    margin-right: 6px;
+    margin-top: 2px;
+    overflow: hidden;
+    line-height: 37px;
+    vertical-align: -17px;
 }
 .navKeyword1{
 	float: left;
@@ -475,6 +488,7 @@
 	width: 1200px;
     margin: 0 auto;
     position: relative;
+    z-index: 3;
     height: 0;
     display: none;
 }
@@ -494,17 +508,15 @@
 }
 .banner_btn_p{
 	width: 30px;
-    height: 30px;
-    background-image: url(../images/jinglingtu.png);
-    background-repeat: no-repeat;
-    background-size: auto 70px;
+    height: 52px;
     margin: 215px 0 0 5px;
+    background: url(../images/icon2.png) no-repeat;
 }
 .p1{
-	background-position: -45px 0;
+    background-position: -2px -6px; 
 }
 .p2{
-	background-position: -85px 0;
+	background-position: -60px -6px; 
 }
 .banner_btn2_list{
 	position: relative;
@@ -526,23 +538,15 @@
 	display: inline-block;
     width: 8px;
     height: 8px;
-    margin: 2px 5px;
+    margin: 0 5px;
     color: #fff;
     background: rgba(76,76,76,0.5);
     border: 0px solid #ccc;
     border-radius: 50%;
-    box-shadow: none;
-    left: 2px;
     outline: medium none;
-    top: 2px;
 }
-.cur{
-	width: 8px;
-    height: 8px;
-    top: 0px;
-    left: 0px;
-    margin: 0px 5px;
-    background-color: rgba(0, 0, 0, 0);
+.banner_btn2_list_box .cur{
+    box-sizing: content-box;
     background: transparent;
     border: 2px solid #808080;
 }
@@ -583,9 +587,6 @@
 }
 .index_bd{
 	padding: 0 20px;
-}
-.index_t3{
-	
 }
 .index_t3 li{
 	margin-left: 3px;
