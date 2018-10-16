@@ -40,8 +40,8 @@ gulp.task("html", ()=>{
 
 // script 转存指令;
 
-gulp.task("script", function(){
-    return gulp.src(["!script/jquery.js","script/*.js"])
+gulp.task("script" , ()=>{
+    return gulp.src(["script/moudle/*.js","!script/jquery.js"])
     .pipe(concat("main.js")).pipe(babel())
     .pipe(uglify())
     .pipe(gulp.dest("dist/script"))
