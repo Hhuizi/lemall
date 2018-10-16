@@ -259,7 +259,6 @@
 	width: 960px;
     height: 460px;
     position: absolute;
-    z-index: 4;
     left: 237px;
     top: 40px;
 }
@@ -523,6 +522,7 @@
 	width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    z-index: 4;
 }
 .banner_btn2_list_box{
 	padding-right: 35px;

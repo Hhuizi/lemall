@@ -25,13 +25,26 @@ Object.assign(Banner.prototype , {
     	this.banner.onmouseleave = this.autoPlay.bind(this);
         this.btn_left.onclick = this.prev.bind(this);
         this.btn_right.onclick = this.next.bind(this);
+        this.btn_left.onmouseover = this.chanL.bind(this);
+        this.btn_right.onmouseover = this.chanR.bind(this);
         for(var i = 0 ; i < this.btn_list.length ; i ++){
             this.btn_list[i].index = i;
             this.btn_list[i].onclick = this.toIndex.bind(this);
         }
     },
+    chanL(){
+        this.btn_left.style.backgroundPositionY = "-67px";
+        this.btn_left.onmouseout = function(){
+            this.style.backgroundPositionY = "-6px";
+        }
+    },
+    chanR(){
+        this.btn_right.style.backgroundPositionY = "-67px";
+        this.btn_right.onmouseout = function(){
+            this.style.backgroundPositionY = "-6px";
+        }
+    },
     show(){
-        console.log(1)
     	this.list.style.display = "block";
     	clearInterval(this.autoTimer);
     },
@@ -59,11 +72,12 @@ Object.assign(Banner.prototype , {
         var e = event || window.event
         var target = e.target || e.srcElement;
         this.nowIndex = target.index;
+        console.log(this.nowIndex)
         this.animate();
     },
     animate(){
         $(this.ul).stop().animate({
-            marginLeft:- this.nowIndex * this.width 
+            marginLeft: -this.nowIndex * this.width + "px"
         })
         
         $(this.btn_list).removeClass("cur");
