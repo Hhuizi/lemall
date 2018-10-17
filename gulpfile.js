@@ -20,6 +20,7 @@ var sass = require("gulp-sass-china");
 
 gulp.task('connect', function() {
     connect.server({
+        port:8888,
         root:"dist/",
         livereload:true,
         // 中间件;
@@ -40,11 +41,12 @@ gulp.task("html", ()=>{
 
 // script 转存指令;
 
-gulp.task("script" , ()=>{
-    return gulp.src(["script/moudle/*.js","!script/jquery.js"])
-    .pipe(concat("main.js")).pipe(babel())
+gulp.task('script' , ()=> {
+    gulp.src('script/moudle/*.js')
+    .pipe(concat('main.js'))
+    .pipe(babel())
     .pipe(uglify())
-    .pipe(gulp.dest("dist/script"))
+    .pipe(gulp.dest('dist/script'))
 })
 
 gulp.task("css", ()=>{

@@ -8,8 +8,8 @@ Object.assign(Banner.prototype , {
         // 元素;
         this.banner = document.querySelector(".banner");
         this.list = document.querySelector(".banner_btn_list");
-        this.btn_left = document.querySelector(".banner_btn_left");
-        this.btn_right = document.querySelector(".banner_btn_right");
+        this.btn_left = document.querySelector(".p1");
+        this.btn_right = document.querySelector(".p2");
         
         this.btn_list = document.querySelectorAll(".banner_btn2_list_box button");
 
@@ -21,13 +21,27 @@ Object.assign(Banner.prototype , {
         this.bindEvent();
     },  
     bindEvent(){
-    	this.banner.onmouseover = this.show.bind(this);
-    	this.banner.onmouseout = this.autoPlay.bind(this);
+    	this.banner.onmouseenter = this.show.bind(this);
+    	this.banner.onmouseleave = this.autoPlay.bind(this);
         this.btn_left.onclick = this.prev.bind(this);
         this.btn_right.onclick = this.next.bind(this);
+        this.btn_left.onmouseover = this.chanL.bind(this);
+        this.btn_right.onmouseover = this.chanR.bind(this);
         for(var i = 0 ; i < this.btn_list.length ; i ++){
             this.btn_list[i].index = i;
             this.btn_list[i].onclick = this.toIndex.bind(this);
+        }
+    },
+    chanL(){
+            this.btn_left.style.backgroundPositionY = "-67px";
+            this.btn_left.onmouseout = function(){
+            this.style.backgroundPositionY = "-6px";
+        }
+    },
+    chanR(){
+            this.btn_right.style.backgroundPositionY = "-67px";
+            this.btn_right.onmouseout = function(){
+            this.style.backgroundPositionY = "-6px";
         }
     },
     show(){
@@ -58,12 +72,12 @@ Object.assign(Banner.prototype , {
         var e = event || window.event
         var target = e.target || e.srcElement;
         this.nowIndex = target.index;
+        console.log(this.nowIndex)
         this.animate();
     },
     animate(){
-       
         $(this.ul).stop().animate({
-            marginLeft:- this.nowIndex * this.width 
+            marginLeft: -this.nowIndex * this.width + "px"
         })
         
         $(this.btn_list).removeClass("cur");
@@ -75,6 +89,7 @@ Object.assign(Banner.prototype , {
         }
     },
     autoPlay(){
+        this.list.style.display = "none";
         this.autoTimer = setInterval(function(){
             this.next();
         }.bind(this),3000)

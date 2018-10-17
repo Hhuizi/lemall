@@ -755,6 +755,61 @@
 .products_i{
 	background-position: 0 -99px;
 }
+.house_show .li4{
+    width: 397px;
+    height: 365px;
+    float: left;
+    background: #fff;
+    margin: 0 3px 20px 0;
+}
+.li4 a{
+    height: 335px;
+}
+.li4 .Box{
+    padding: 0;
+}
+.li4 .Pic{
+    width: 200px;
+    height: 240px;
+    margin: 0 auto;
+    text-align: center;
+    float: none;
+}
+.li4 .Pic img{
+    width: 100%;
+}
+.li4 .Text{
+    float: none;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+}
+.li4 .name{
+    font-size: 26px;
+    line-height: 47px;
+    height: 47px;
+    margin-bottom: 0;
+    margin-top: 6px;
+}
+.li4 .config{
+    font-size: 12px;
+    line-height: 23px;
+    height: 23px;
+}
+.li4 .price{
+    font-size: 14px;
+    padding: 0;
+    height: 19px;
+    line-height: 19px;
+}
+#jiagou{
+    height: 30px;
+    line-height: 30px;
+    background: #c61b00;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
 /*footer区样式*/
 .footer{
 	background-color: #191919;
