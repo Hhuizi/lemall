@@ -71,7 +71,7 @@ gulp.task("es6",()=>{
     .pipe(gulp.dest("dist/script"));
 })
 gulp.task("watch", ()=>{
-    gulp.watch("index.html",["html","sass"]);
+    gulp.watch("*.html",["html","sass"]);
     gulp.watch("css/*.css",["html","css"]);
     gulp.watch("sass/*.scss",["html","sass"]);
 })

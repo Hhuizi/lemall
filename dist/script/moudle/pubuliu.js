@@ -43,10 +43,10 @@ $.extend(WaterFall.prototype,{
                                 </div>
                             </div>
                         </a>
-                        <p id="jiagou">加入购物车</p>
+                        <p id="jiagou" data-id=${json[i].iid}>加入购物车</p>
                     </li>
                  `
-            console.log(json[i].price)
+            // console.log(json[i].price)
         }
         this.main.html(this.main.html() + html);
         this.loading = false;

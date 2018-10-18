@@ -32,21 +32,20 @@ $.extend(WaterFall.prototype,{
         var html="";
         for( var i=0; i<json.length; i++){
             html += `
-                    <li class="li1 li4">
-                        <a href="#" target="_blank">
-                            <div class="Box">
-                                <div class="Pic"><img src=${json[i].show.img} alt="/product/products-pid-1003208.html"></div>
-                                <div class="Text">
-                                    <div class="name">${json[i].props[0]}</div>
-                                    <div class="config mcl-3">${json[i].title}</div>
-                                    <div class="price">${json[i].price}</div>
+                        <li class="li1 li4">
+                            <a href="#" target="_blank">
+                                <div class="Box">
+                                    <div class="Pic"><img src=${json[i].show.img} alt="/product/products-pid-1003208.html"></div>
+                                    <div class="Text">
+                                        <div class="name">${json[i].props[0]}</div>
+                                        <div class="config mcl-3">${json[i].title}</div>
+                                        <div class="price">${json[i].price}</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                        <p id="jiagou">加入购物车</p>
-                    </li>
-                 `
-            console.log(json[i].price)
+                            </a>
+                            <p id="jiagou" data-id=${json[i].iid}>加入购物车</p>
+                        </li>
+                    `
         }
         this.main.html(this.main.html() + html);
         this.loading = false;
