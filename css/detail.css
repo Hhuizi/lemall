@@ -1,0 +1,41 @@
+.car_wrap_li{
+    width: 700px;
+    box-shadow: 0 0 3px #ddd;
+    margin: 20px auto;
+    padding: 20px;
+}
+.car_li_left{
+    float: left;
+    width: 200px;
+    margin-right: 5px;
+}
+.car_li_left img{
+    width: 100%;
+}
+.car_li_right{
+    float: left;
+    width: 495px;
+}
+.car_li_h{
+    font-size: 16px;
+}
+.car_xiangqing{
+    font-size: 14px;
+    text-indent: 2em;
+    margin: 80px 0;
+}
+.car_price{
+    font-size: 12px;
+    text-align: right;
+    color: #c61b00;
+}
+.addcar{
+    float: right;
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #c61b00;
+    color: #fff;
+    margin-top: 20px;
+}

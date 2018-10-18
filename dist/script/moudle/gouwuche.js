@@ -21,8 +21,8 @@ $.extend(ShopCar.prototype,{
     bindEvent:function(){
         $("#pu_wrap").on("click","p",this.addCar.bind(this));
 
-        $(".btn_cart>div").on("mouseenter",this.showList.bind(this));
-        $(".btn_cart>div").on("mouseleave",function(){
+        $(".btn_cart").on("mouseenter",this.showList.bind(this));
+        $(".btn_cart").on("mouseleave",function(){
             $("#car_wrap").children().remove();
         });
         $(".btn_cart>div").on("click",function(event){
@@ -31,7 +31,7 @@ $.extend(ShopCar.prototype,{
 
             $.removeCookie("shopCar");
             // 执行鼠标移出事件;
-            $(".btn_cart>div").triggerHandler("mouseleave");
+            $(".btn_cart").triggerHandler("mouseleave");
             this.listSum();
         }.bind(this));
     },
