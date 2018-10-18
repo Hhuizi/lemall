@@ -20,7 +20,7 @@ $.extend(ShopCar.prototype,{
     },
     bindEvent:function(){
         $("#pu_wrap").on("click","p",this.addCar.bind(this));
-
+        $("#pu_wrap").on("click","img",this.demail.bind(this));
         $(".btn_cart").on("mouseenter",this.showList.bind(this));
         $(".btn_cart").on("mouseleave",function(){
             $("#car_wrap").children().remove();
@@ -37,7 +37,11 @@ $.extend(ShopCar.prototype,{
     },
     addData:function(json1){
         this.json=json1.result.wall.list;
-        console.log(this.json)
+    },
+    demail:function(event){
+        window.location.href="detail.html";
+        var target = event.target ;
+        var id = $(target).attr("data-id");
     },
     addCar:function(event){
         var target = event.target ;

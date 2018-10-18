@@ -34,7 +34,7 @@ $.extend(WaterFall.prototype,{
             html += `
                         <li class="li1 li4">
                             <div class="Box">
-                                <div class="Pic"><img src=${json[i].show.img} alt="/product/products-pid-1003208.html"></div>
+                                <div class="Pic"><img data-id=${json[i].iid} src=${json[i].show.img} alt="/product/products-pid-1003208.html"></div>
                                 <div class="Text">
                                     <div class="name">${json[i].props[0]}</div>
                                     <div class="config mcl-3">${json[i].title}</div>

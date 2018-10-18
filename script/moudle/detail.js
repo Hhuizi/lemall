@@ -1,7 +1,6 @@
 function Demail(){}
 $.extend(Demail.prototype,{
     init:function(){
-        this.main = $("#pu_wrap")
         this.loadJson()
         .done(function(res){
             this.addData(res);;
@@ -17,15 +16,10 @@ $.extend(Demail.prototype,{
         }
         return $.ajax(opt);
     },
-    bindEvent:function(){
-        $("#pu_wrap").on("click","img",this.demail.bind(this));
-    },
     addData:function(json1){
         this.json=json1.result.wall.list;
     },
-    demail:function(event){
-        console.log(event.currentTarget.children[0].children[0].children[0].currentSrc);
-        
+    demail:function(){
         var html = `
                     <li class="car_wrap_li">
                         <div class="car_li_left">
@@ -45,3 +39,4 @@ $.extend(Demail.prototype,{
 })
 var demail = new Demail();
 demail.init();
+demail.demail();
