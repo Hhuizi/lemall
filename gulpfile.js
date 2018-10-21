@@ -42,9 +42,8 @@ gulp.task("html", ()=>{
 // script 转存指令;
 
 gulp.task('script' , ()=> {
-    gulp.src('script/moudle/*.js')
+   return gulp.src(['script/moudle/*.js'])
     .pipe(concat('main.js'))
-    .pipe(babel())
     .pipe(uglify())
     .pipe(gulp.dest('dist/script'))
 })
@@ -60,7 +59,10 @@ gulp.task("sass", () =>{
            .pipe(sass().on("error",sass.logError))
            .pipe(gulp.dest("dist/css"))
 })
-
+gulp.task("images",()=>{
+    return gulp.src(["images/*.*"])
+    .pipe(gulp.dest("dist/images"));
+})
 // 编译 ? es6 => es5;
 
 gulp.task("es6",()=>{
@@ -71,9 +73,10 @@ gulp.task("es6",()=>{
     .pipe(gulp.dest("dist/script"));
 })
 gulp.task("watch", ()=>{
-    gulp.watch("*.html",["html","sass"]);
-    gulp.watch("css/*.css",["html","css"]);
-    gulp.watch("sass/*.scss",["html","sass"]);
+    gulp.watch("index.html",["script","html","sass"]);
+    gulp.watch("sass/*.scss",["script","html","sass"]);
+    gulp.watch("js/*.js",["script","html","sass"]);
+    gulp.watch("images/*.*"["images","script","html","sass"])
 })
 
 gulp.task("default",["watch","connect"]);
