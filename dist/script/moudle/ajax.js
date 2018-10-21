@@ -11,6 +11,22 @@ function ajaxGet(url){
         }
     })
 }
+function ajaxPost(url,data){
+    return new Promise(function(success){
+        var xhr = new XMLHttpRequest();
+        var opt = /\?/.test(url) ? "&" : "?";
+        xhr.open("POST",url + opt + data);
+        xhr.setRequestHeader("content-type","application/x-www-form-urlencoded;charset=utf-8");
+        xhr.send(data);
+        xhr.onload = function(){
+            if(xhr.status == 200){
+                // xhr.response;
+                success(xhr.response)
+            }
+        }
+    })
+}
+
 function jsonp(url,call){
     return  new Promise(function(success,failed){
         // 1. 全局函数;
