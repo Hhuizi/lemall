@@ -10,7 +10,8 @@ oList.onclick = function(evt){
      if(imgArray.indexOf(target) != -1){
          // 页面跳转;
          // 先要储存cookie;
-         cookie("goodsId",target.getAttribute("data-id"));
+         $.cookie("detail",target.getAttribute("data-id"));
+        //  console.log($.cookie("detail"))
          location.href = "detail.html";
      }
 }

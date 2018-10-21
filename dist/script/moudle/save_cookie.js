@@ -12,7 +12,7 @@ oList.onclick = function(evt){
          // 页面跳转;
          // 先要储存cookie;
          $.cookie("detail",target.getAttribute("data-id"));
-         console.log($.cookie("detail"))
+        //  console.log($.cookie("detail"))
          location.href = "detail.html";
      }
 }
